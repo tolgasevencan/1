@@ -1,0 +1,20 @@
+body {
+    background-color: #dc143c; /* Visne Çürüğü Rengi */
+    color: #ffffff; /* Beyaz Yazı Rengi */
+    font-family: 'Arial', sans-serif; /* Yazı Tipi */
+    margin: 20px; /* Sayfa Kenar Boşluğu */
+    padding: 20px; /* İçerik Boşluğu */
+}
+
+h2 {
+    text-align: center; /* Başlık Ortala */
+}
+
+a {
+    color: #ffffff; /* Link Rengi */
+    text-decoration: none; /* Altçizgiyi Kaldır */
+}
+
+a:hover {
+    text-decoration: underline; /* Hover Durumunda Altçizgi Ekleyin */
+}
