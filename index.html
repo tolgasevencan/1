@@ -5,17 +5,46 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Auswahl</title>
+    <title>Auswahl der Links</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <h2>Zu welere Siite möchted Sie wiitergleitet werde??</h2>
-    <p><a href="https://www.instagram.com/beauty_wellness_liridona?igsh=bmpyemUycTBjYm03">
-            <img src="https://www.instagram.com/static/images/ico/favicon-192.png/68d99ba29cc8.png" alt="Instagram">
-        </a></p>
-    <p><a href="https://www.facebook.com/beautywellnessliridona">Facebook</a></p>
-    <p><a href="https://www.fusspflege-wellness.ch/">Webseite</a></p>
+    <div class="container">
+        <!-- Hamburger Menü -->
+        <div class="menu-toggle">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+
+        <!-- Menü Listesi -->
+        <div class="menu">
+            <ul>
+                <li>Test</li>
+                <li>Test</li>
+                <li><a href="https://www.fusspflege-wellness.ch/">Termin</a></li>
+            </ul>
+        </div>
+
+        <!-- Logo Konteyneri -->
+        <div class="logo-container">
+            <a href="https://www.instagram.com/beauty_wellness_liridona?igsh=bmpyemUycTBjYm03" class="logo-link">
+                <img class="logo"
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/150px-Instagram_logo_2022.svg.png"
+                    alt="Instagram">
+            </a>
+            <a href="https://www.facebook.com/beautywellnessliridona" class="logo-link">
+                <img class="logo" src="https://static.xx.fbcdn.net/rsrc.php/y1/r/4lCu2zih0ca.svg" alt="Facebook">
+            </a>
+            <a href="https://www.fusspflege-wellness.ch/" class="logo-link">
+                <img class="logo"
+                    src="https://static.wixstatic.com/media/0e7a1f_35476bde1cb5496d9896ea7a91f8b787~mv2.png/v1/fill/w_280,h_280,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Logo%20Definitiv%20Neziri%20Transparent.png"
+                    alt="Webseite">
+            </a>
+        </div>
+    </div>
+    <script src="script.js" defer></script>
 </body>
 
 </html>

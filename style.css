@@ -1,29 +1,133 @@
-body {
-    background-color: #dc143c;
-    /* Visne Çürüğü Rengi */
-    color: #ffffff;
-    /* Beyaz Yazı Rengi */
-    font-family: 'Arial', sans-serif;
-    /* Yazı Tipi */
-    margin: 20px;
-    /* Sayfa Kenar Boşluğu */
-    padding: 20px;
-    /* İçerik Boşluğu */
+body,
+html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-h2 {
+.container {
     text-align: center;
-    /* Başlık Ortala */
 }
 
-a {
-    color: #ffffff;
-    /* Link Rengi */
+.logo-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    /* Logo arası boşluk */
+}
+
+.logo-link {
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.logo-link:hover {
+    transform: scale(1.1);
+    /* Üzerine gelindiğinde boyutunu büyütme */
+}
+
+.logo {
+    width: 200px;
+    /* Logoların genişliği */
+    height: auto;
+    /* Yükseklik otomatik olarak ayarlanır */
+}
+
+/* Hamburger Menü Stilleri */
+.menu-toggle {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+    cursor: pointer;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 999;
+    /* Diğer içeriğin üstünde olması için */
+}
+
+.bar {
+    width: 100%;
+    height: 3px;
+    background-color: #333;
+    transition: all 0.3s ease;
+}
+
+/* Hamburger Menü Açık Durumu */
+.menu-toggle.active .bar:nth-child(1) {
+    transform: rotate(45deg) translate(0, 5px);
+}
+
+.menu-toggle.active .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-toggle.active .bar:nth-child(3) {
+    transform: rotate(-45deg) translate(0, -5px);
+}
+
+/* Menü Listesi Stilleri */
+.menu {
+    display: none;
+    /* Başlangıçta gizli */
+    position: fixed;
+    top: 60px;
+    /* Hamburger menüden aşağıda görüntülenecek */
+    right: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+.menu ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.menu ul li {
+    margin-bottom: 10px;
+}
+
+.menu ul li a {
     text-decoration: none;
-    /* Altçizgiyi Kaldır */
+    color: #333;
 }
 
-a:hover {
-    text-decoration: underline;
-    /* Hover Durumunda Altçizgi Ekleyin */
+/* Menü Listesi Görüntülenme Durumu */
+.menu.active {
+    display: block;
+}
+
+/* Orta Boyutlu Ekranlar için */
+@media screen and (max-width: 768px) {
+    .logo-container {
+        flex-direction: column;
+        /* Logoları dikey olarak sırala */
+        align-items: center;
+        /* Logoları dikeyde ortala */
+    }
+
+    .logo-link {
+        margin: 10px 0;
+        /* Logolar arası boşluk */
+    }
+
+    .logo {
+        width: 150px;
+        /* Logoların genişliği */
+        height: auto;
+        /* Yükseklik otomatik olarak ayarlanır */
+    }
+}
+
+/* Küçük Ekranlar için */
+@media screen and (max-width: 480px) {
+    .logo {
+        width: 100px;
+        /* Logoların genişliği */
+    }
 }
