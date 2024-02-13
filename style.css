@@ -131,3 +131,9 @@ html {
         /* Logoların genişliği */
     }
 }
+
+#weather {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+}
