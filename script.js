@@ -18,11 +18,11 @@ function getWeather() {
             const windSpeed = currentData.wind_speed_10m;
 
             // Hava durumu verilerini HTML içinde gösterme
-            document.getElementById('temperature').textContent = `Sıcaklık: ${temperature}°C`;
-            document.getElementById('windSpeed').textContent = `Rüzgar Hızı: ${windSpeed} m/s`;
+            document.getElementById('temperature').textContent = `Temperature: ${temperature}°C`;
+            document.getElementById('windSpeed').textContent = `Windspeed: ${windSpeed} m/s`;
         })
         .catch(error => {
-            console.error('Hava durumu verisi alınamadı:', error);
+            console.error('No weather information available:', error);
         });
 }
 
