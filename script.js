@@ -18,8 +18,8 @@ function getWeather() {
             const windSpeed = currentData.wind_speed_10m;
 
             // Hava durumu verilerini HTML içinde gösterme
-            document.getElementById('temperature').textContent = `Temperature: ${temperature}°C`;
-            document.getElementById('windSpeed').textContent = `Windspeed: ${windSpeed} m/s`;
+            document.getElementById('temperature').textContent = `temperature: ${temperature}°C`;
+            document.getElementById('windSpeed').textContent = `windSpeed: ${windSpeed} m/s`;
         })
         .catch(error => {
             console.error('No weather information available:', error);
