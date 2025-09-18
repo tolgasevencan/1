@@ -1,7 +1,7 @@
-# Üçgenin alanını hesaplayan program
-taban = float(input("Üçgenin taban uzunluğunu girin: "))
-yukseklik = float(input("Üçgenin yüksekliğini girin: "))
+# Programm zur Berechnung der Dreiecksfläche
+basis = float(input("Geben Sie die Basis des Dreiecks ein: "))
+hoehe = float(input("Geben Sie die Höhe des Dreiecks ein: "))
 
-alan = (taban * yukseklik) / 2
+flaeche = (basis * hoehe) / 2
 
-print(f"Üçgenin alanı: {alan}")
+print(f"Die Fläche des Dreiecks beträgt: {flaeche}")
